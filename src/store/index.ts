@@ -9,3 +9,21 @@ export const useStore = defineStore('main', {
   getters: {},
   actions: {}
 })
+
+export const useLayoutStore = defineStore('layout', {
+  state: () => {
+    return {
+      isConfigPanelOpen: true,
+      isComponentPanelOpen: true
+    }
+  },
+  getters: {},
+  actions: {
+    toggleConfigPanel() {
+      this.isConfigPanelOpen = !this.isConfigPanelOpen
+    },
+    toggleComponentPanel() {
+      this.isComponentPanelOpen = !this.isComponentPanelOpen
+    }
+  }
+})
