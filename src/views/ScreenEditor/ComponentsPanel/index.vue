@@ -1,5 +1,5 @@
 <template>
-  <div :class="['cp', isComponentPanelOpen && 'cp--hidden']"></div>
+  <div :class="['cp', !isComponentPanelOpen && 'cp--hidden']"></div>
 </template>
 <script lang="ts" setup>
 import { useLayoutStore } from '@/store'

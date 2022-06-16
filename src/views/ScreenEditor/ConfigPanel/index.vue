@@ -1,5 +1,5 @@
 <template>
-  <div :class="['config-panel', isConfigPanelOpen && 'config-panel--hidden']"></div>
+  <div :class="['config-panel', !isConfigPanelOpen && 'config-panel--hidden']"></div>
 </template>
 <script lang="ts" setup>
 import { useLayoutStore } from '@/store'
